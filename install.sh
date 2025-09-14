@@ -12,7 +12,7 @@ clear
 echo -e "${CYAN}"
 echo "╔═══════════════════════════════════════╗"
 echo "║      VPS Deploy Bot Installer 🚀      ║"
-echo "║         Script by HycroeDev           ║"
+echo "║          Script by DarkNode           ║"
 echo "╚═══════════════════════════════════════╝"
 echo -e "${NC}"
 sleep 2
@@ -49,7 +49,7 @@ run_cmd "Restarting Docker" "systemctl restart docker"
 run_cmd "Enabling Docker" "systemctl enable docker"
 
 if [ ! -d "/opt/vps-deploy-bot" ]; then
-    run_cmd "Cloning repository" "git clone https://github.com/hycroedev/vps-deploy-bot.git /opt/vps-deploy-bot"
+    run_cmd "Cloning repository" "git clone https://github.com/hiteshwy/vps-deploy-bot.git /opt/vps-deploy-bot"
 else
     run_cmd "Updating repository" "cd /opt/vps-deploy-bot && git pull"
 fi
@@ -115,6 +115,6 @@ fi
 echo -e "${GREEN}"
 echo "╔═══════════════════════════════════════╗"
 echo "║  Installation Complete! 🚀            ║"
-echo "║  Script made with ❤️ by HycroeDev     ║"
+echo "║   Script made with ❤️ by DarkNode     ║"
 echo "╚═══════════════════════════════════════╝"
 echo -e "${NC}"
